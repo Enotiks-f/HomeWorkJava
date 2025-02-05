@@ -41,14 +41,15 @@ public class Main {
         System.out.println("Задание 4");
         byte buttle = 16;
         byte twoMin = 2;
+        int bottlesPerMin = buttle / 2;
         int twentyMin = buttle * ( 20 / twoMin );
-        int oneDay = buttle * ( ( 24 * 60 ) / twoMin);
-        int threedDay = buttle * ( oneDay * 3 );
-        int oneMonth = buttle * (threedDay * 10 );
-        System.out.println("За 20 минут"+ " машина произвела" + twentyMin + "штук бутылок");
-        System.out.println("За сутки"+ " машина произвела" + oneDay + "штук бутылок");
-        System.out.println("За 3 дня"+ " машина произвела" + threedDay + "штук бутылок");
-        System.out.println("За 1 месяц"+ " машина произвела" + oneMonth + "штук бутылок");
+        int oneDay = bottlesPerMin * 60 * 24;
+        int threedDay = oneDay * 3;
+        int oneMonth = threedDay * 10;
+        System.out.println("За 20 минут"+ " машина произвела " + twentyMin + " штук бутылок");
+        System.out.println("За сутки"+ " машина произвела " + oneDay + " штук бутылок");
+        System.out.println("За 3 дня"+ " машина произвела " + threedDay + " штук бутылок");
+        System.out.println("За 1 месяц"+ " машина произвела " + oneMonth + " штук бутылок");
 
         System.out.println("Задание 5");
         byte allPaint = 120;
