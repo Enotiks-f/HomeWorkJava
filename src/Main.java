@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
         byte age = 24;
-        if (18 >= age) {
+        if (age >= 18) {
             System.out.println("Он совершеннолетний");
         }else {
             System.out.println("Он не достиг совершеннолетия");
@@ -26,23 +26,23 @@ public class Main {
 
         System.out.println("Задача 4");
 
-        if (age >= 2 && 6 >= age) {
+        if (age >= 2 && age <= 6) {
             System.out.println("Ему нужно ходить в детский сад.");
-        }else if (age >= 7 && 17 >= age) {
+        }else if (age >= 7 && age <= 17) {
             System.out.println("Ему нужно ходить в школу");
-        }else if (age <= 18 && age < 24) {
+        }else if (age >= 18 && age <= 23) {
             System.out.println("его место в университете.");
         }else if (age >= 24)
             System.out.println("пора ходить на работу.");
 
         System.out.println("Задача 5");
-        int baby_age = 5;
-        if (baby_age < 5) {
-            System.out.println("Если возраст ребенка равен " + baby_age + " то он не может кататься на аттракционе.");
-        }else if (baby_age >= 5 && baby_age < 14) {
-            System.out.println("Если возраст ребенка равен " + baby_age + " то он может кататься только в сопровождении взрослого");
+        int babyAge = 5;
+        if (babyAge < 5) {
+            System.out.println("Если возраст ребенка равен " + babyAge + " то он не может кататься на аттракционе.");
+        }else if (babyAge >= 5 && babyAge < 14) {
+            System.out.println("Если возраст ребенка равен " + babyAge + " то он может кататься только в сопровождении взрослого");
         }else {
-            System.out.println("Если возраст ребенка равен " + baby_age + " то он может кататься без сопровождения взрослого.");
+            System.out.println("Если возраст ребенка равен " + babyAge + " то он может кататься без сопровождения взрослого.");
         }
 
         System.out.println("Задача 6");
