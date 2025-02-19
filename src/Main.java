@@ -11,17 +11,18 @@ public class Main {
 
         System.out.println("Задача 2");
         short clientDeviceYear = 2015;
-        if (clientOC == 0) {
-            if (clientDeviceYear < 2015) {
+        if (clientDeviceYear < 2015) {
+            if (clientOC == 0) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }else {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-        }else {
-            if (clientDeviceYear < 2015) {
+            } else {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }else {
-                System.out.println("Установите версию приложения для Android по ссылке");}
+            }
+        } else {
+            if (clientOC == 0) {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            }
         }
 
         System.out.println("Задача 3");
