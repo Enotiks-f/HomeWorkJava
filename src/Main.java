@@ -1,68 +1,79 @@
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Задача 1");
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        byte clientOC = 0;
+        if (clientOC == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
 
         System.out.println("Задача 2");
-        dog = dog + 4;
-        cat = cat + 4;
-        paper = paper + 4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        short clientDeviceYear = 2015;
+        if (clientOC == 0) {
+            if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            }else {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            }
+        }else {
+            if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }else {
+                System.out.println("Установите версию приложения для Android по ссылке");}
+        }
 
         System.out.println("Задача 3");
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7636;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
-
+        int year = 2021;
+        if (year < 1584) {
+            System.out.println(year + " год не является високосным");
+        } else if (year % 400 == 0) {
+            System.out.println(year + " год является високосным.");
+        } else if (year % 4 == 0 && year % 100 != 0) {
+            System.out.println(year + " год является високосным.");
+        } else {
+            System.out.println(year + " год не является високосным.");
+        }
 
         System.out.println("Задача 4");
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend + "\n");
+
+        short deliveryDistance = 95;
+        if (deliveryDistance <= 20){
+            System.out.println("Потребуеться дней: 1");
+        } else if (deliveryDistance <= 60) {
+            System.out.println("Потребуеться дней: 2");
+        } else if (deliveryDistance <= 100) {
+            System.out.println("Потребуеться дней: 3");
+        } else {
+            System.out.println("Свыше 100 км доставки нет.");
+        }
 
         System.out.println("Задача 5");
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog + "\n");
-
-        System.out.println("Задача 6");
-        var boxerFirst = 78.2;
-        var boxerSecond = 82.7;
-        var totalWeight = boxerFirst + boxerSecond;
-        var difference = boxerSecond - boxerFirst;
-        System.out.println("Общая масса боксеро: " + totalWeight);
-        System.out.println("Разница масс бойцов: " + difference + "\n");
-
-        System.out.println("Задача 7");
-        var remains = boxerSecond % boxerFirst;
-        System.out.println("Остаток от деления: " + remains + "\n");
-
-        System.out.println("Задача 8");
-        var totalHours = 640;
-        var personHours = 8;
-        var totalPerson = totalHours / personHours;
-        System.out.println("Всего работников в компании — " + totalPerson + " Человек");
-        totalPerson = totalPerson + 94;
-        var allHours = totalPerson * 8;
-        System.out.println("Если в компании работает " + totalPerson + " то всего " + allHours + " работы может быть поделено между сотрудниками.");
-
+        byte monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+        }
     }
 }
