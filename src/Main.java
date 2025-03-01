@@ -1,68 +1,71 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Задача 1");
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        // TASK 1
+        System.out.println("TASK 1");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
 
-        System.out.println("Задача 2");
-        dog = dog + 4;
-        cat = cat + 4;
-        paper = paper + 4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        // TASK 2
+        System.out.println("TASK 2");
+        for (int i = 10; i >= 1; i--) {
+            System.out.println(i);
+        }
 
-        System.out.println("Задача 3");
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7636;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        // TASK 3
+        System.out.println("TASK 3");
+        for (int i = 0; i <= 17; i = i + 2) {
+            System.out.println(i);
+        }
 
+        // TASK 4
+        System.out.println("TASK 4");
+        for (int i = 10; i >= -10; i--) {
+            System.out.println(i);
+        }
 
-        System.out.println("Задача 4");
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend + "\n");
+        // TASK 5
+        System.out.println("TASK 5");
+        for (int i = 1904; i <= 2096; i = i + 4) {
+            System.out.println(i + " год является високосным");
+        }
 
-        System.out.println("Задача 5");
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog + "\n");
+        // TASK 6
+        System.out.println("TASK 6");
+        for (int i = 7; i <= 98; i = i + 7) {
+            System.out.println(i);
+        }
 
-        System.out.println("Задача 6");
-        var boxerFirst = 78.2;
-        var boxerSecond = 82.7;
-        var totalWeight = boxerFirst + boxerSecond;
-        var difference = boxerSecond - boxerFirst;
-        System.out.println("Общая масса боксеро: " + totalWeight);
-        System.out.println("Разница масс бойцов: " + difference + "\n");
+        // TASK 7
+        System.out.println("TASK 7");
+        for (int i = 1; i <= 512; i = i * 2) {
+            System.out.println(i);
+        }
 
-        System.out.println("Задача 7");
-        var remains = boxerSecond % boxerFirst;
-        System.out.println("Остаток от деления: " + remains + "\n");
+        // TASK 8
+        System.out.println("TASK 8");
+        int accumulation = 29000;
+        int total = 0;
+        for (int i = 0; i <= 12; i++ ) {
+            total = total + accumulation;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + "рублей");
+        }
 
-        System.out.println("Задача 8");
-        var totalHours = 640;
-        var personHours = 8;
-        var totalPerson = totalHours / personHours;
-        System.out.println("Всего работников в компании — " + totalPerson + " Человек");
-        totalPerson = totalPerson + 94;
-        var allHours = totalPerson * 8;
-        System.out.println("Если в компании работает " + totalPerson + " то всего " + allHours + " работы может быть поделено между сотрудниками.");
+        // TASK 9
+        System.out.println("TASK 9");
+        for (int i = 0; i <= 12; i++ ) {
+            total = total + total/100;
+            total = total + accumulation;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + "рублей");
+        }
 
+        // TASK 10
+
+        System.out.println("TASK 10");
+        int  count = 0;
+        for (int i = 1; i <= 10; i++) {
+            count = i * 2;
+            System.out.println("2*" + i + "=" + count);
+        }
+        }
     }
-}
