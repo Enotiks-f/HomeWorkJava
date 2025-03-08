@@ -1,68 +1,90 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Задача 1");
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        //TASK1
+        System.out.println("\nTASK1\n");
+        int saving = 0;
+        int month = 0;
+        int salary = 15_000;
+        while (saving <= 2_459_000) {
+            month++;
+            saving = saving + salary;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + saving + " рублей");
+        }
+        //TASK2
+        System.out.println("\nTASK2\n");
+        int n = 0;
+        while (n < 10) {
+            System.out.print(++n + " ");
+            ;
+        }
+        System.out.println();
+        for (; n != 0; n--) {
+            System.out.print(n + " ");
+        }
+        //TASK3
+        System.out.println("\nTASK3\n");
+        int countryY = 12_000_000;
+        byte birth = 17;
+        byte death = 8;
+        byte year = 0;
 
-        System.out.println("Задача 2");
-        dog = dog + 4;
-        cat = cat + 4;
-        paper = paper + 4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        while (year != 10) {
+            year++;
+            int loc = countryY / 1000;
+            int birthYear = birth * loc;
+            int deathYear = death * loc;
+            countryY -= deathYear;
+            countryY += birthYear;
+            System.out.println("Год " + year + ", численость населения состовляет " + countryY);
+        }
+        //TASK4 AND TASK5
+        System.out.println("\nTASK4 and TASK5\n");
+        int deposit = 15_000;
+        int percentageMonth = 7;
+        int totalSum = 12_000_000;
+        int monthDeposit = 0;
 
-        System.out.println("Задача 3");
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7636;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper + "\n");
+        while (deposit <= totalSum) {
+            monthDeposit++;
+            deposit += (deposit / 100) * percentageMonth;
+            if (monthDeposit % 6 == 0) {
+                System.out.println("Месяц " + monthDeposit + " накопил " + deposit);
+            }
+        }
 
+        //TASK6
+        System.out.println("\nTASK6\n");
+        int saveYear = 9;
+        int depositVasiliy = 15_000;
+        int monthTotal = 0;
 
-        System.out.println("Задача 4");
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend + "\n");
+        while (monthTotal != (saveYear*12)) {
+            monthTotal++;
+            depositVasiliy += (depositVasiliy / 100) * percentageMonth;
+            if (monthTotal % 6 == 0) {
+                System.out.println("Полугодие: " + monthTotal + " Сумма:" + depositVasiliy);
+            }
+        }
+        //TASK7
+        System.out.println("\nTASK7\n");
+        int firstFriday = 5;
+        int totalDayInMonth = 31;
+        for (; firstFriday< totalDayInMonth; firstFriday+=7) {
+            System.out.println("Сегодня пятница, " + firstFriday + "-е" + " число. Необходимо подготовить отчет");
+        }
 
-        System.out.println("Задача 5");
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog + "\n");
+        //TASK8
+        System.out.println("\nTASK8\n");
+        short startYear = 2025-200;
+        short endYear = 2025+100;
 
-        System.out.println("Задача 6");
-        var boxerFirst = 78.2;
-        var boxerSecond = 82.7;
-        var totalWeight = boxerFirst + boxerSecond;
-        var difference = boxerSecond - boxerFirst;
-        System.out.println("Общая масса боксеро: " + totalWeight);
-        System.out.println("Разница масс бойцов: " + difference + "\n");
+        while (startYear<=endYear) {
+            startYear++;
+            if (startYear % 79 == 0) {
+                System.out.println(startYear);
+            }
+        }
 
-        System.out.println("Задача 7");
-        var remains = boxerSecond % boxerFirst;
-        System.out.println("Остаток от деления: " + remains + "\n");
-
-        System.out.println("Задача 8");
-        var totalHours = 640;
-        var personHours = 8;
-        var totalPerson = totalHours / personHours;
-        System.out.println("Всего работников в компании — " + totalPerson + " Человек");
-        totalPerson = totalPerson + 94;
-        var allHours = totalPerson * 8;
-        System.out.println("Если в компании работает " + totalPerson + " то всего " + allHours + " работы может быть поделено между сотрудниками.");
 
     }
 }
