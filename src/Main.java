@@ -2,89 +2,53 @@ public class Main {
     public static void main(String[] args) {
         //TASK1
         System.out.println("\nTASK1\n");
-        int saving = 0;
-        int month = 0;
-        int salary = 15_000;
-        while (saving <= 2_459_000) {
-            month++;
-            saving = saving + salary;
-            System.out.println("Месяц " + month + " сумма накоплений равна " + saving + " рублей");
-        }
+        int[] weight = new int[3];
+        weight[0] = 1;
+        weight[1] = 2;
+        weight[2] = 3;
+
+        float[] weightFlout = new float[3];
+        weightFlout[0] = 1.57f;
+        weightFlout[1] = 7.654f;
+        weightFlout[2] = 9.986f;
+
+        int[] freeWeight = {1, 5, 89, 43, 232, 2};
+
         //TASK2
         System.out.println("\nTASK2\n");
-        int n = 0;
-        while (n < 10) {
-            System.out.print(++n + " ");
-            ;
+        for (int i = 0; i < weight.length; i++) {
+            System.out.print(weight[i] + " ");
         }
         System.out.println();
-        for (; n != 0; n--) {
-            System.out.print(n + " ");
+        for (int i = 0; i < weightFlout.length; i++) {
+            System.out.print(weightFlout[i] + " ");
         }
+        System.out.println();
+        for (int i = 0; i < freeWeight.length; i++) {
+            System.out.print(freeWeight[i] + " ");
+        }
+
         //TASK3
         System.out.println("\nTASK3\n");
-        int countryY = 12_000_000;
-        byte birth = 17;
-        byte death = 8;
-        byte year = 0;
-
-        while (year != 10) {
-            year++;
-            int loc = countryY / 1000;
-            int birthYear = birth * loc;
-            int deathYear = death * loc;
-            countryY -= deathYear;
-            countryY += birthYear;
-            System.out.println("Год " + year + ", численость населения состовляет " + countryY);
+        for (int i = weight.length-1; i >= 0; i--) {
+            System.out.print(weight[i] + " ");
         }
-        //TASK4 AND TASK5
-        System.out.println("\nTASK4 and TASK5\n");
-        int deposit = 15_000;
-        int percentageMonth = 7;
-        int totalSum = 12_000_000;
-        int monthDeposit = 0;
+        System.out.println();
+        for (int i = weightFlout.length-1; i >= 0; i--) {
+            System.out.print(weightFlout[i] + " ");
+        }
+        System.out.println();
+        for (int i = freeWeight.length-1; i >= 0; i--) {
+            System.out.print(freeWeight[i] + " ");
+        }
+        //TASK4
+        System.out.println("\nTASK4\n");
+        int[] arr = {1, 3, 4, 5, 23, 7, 8 , 13, 43, 22, 50};
 
-        while (deposit <= totalSum) {
-            monthDeposit++;
-            deposit += (deposit / 100) * percentageMonth;
-            if (monthDeposit % 6 == 0) {
-                System.out.println("Месяц " + monthDeposit + " накопил " + deposit);
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                System.out.println(arr[i]);
             }
         }
-
-        //TASK6
-        System.out.println("\nTASK6\n");
-        int saveYear = 9;
-        int depositVasiliy = 15_000;
-        int monthTotal = 0;
-
-        while (monthTotal != (saveYear*12)) {
-            monthTotal++;
-            depositVasiliy += (depositVasiliy / 100) * percentageMonth;
-            if (monthTotal % 6 == 0) {
-                System.out.println("Полугодие: " + monthTotal + " Сумма:" + depositVasiliy);
-            }
-        }
-        //TASK7
-        System.out.println("\nTASK7\n");
-        int firstFriday = 5;
-        int totalDayInMonth = 31;
-        for (; firstFriday< totalDayInMonth; firstFriday+=7) {
-            System.out.println("Сегодня пятница, " + firstFriday + "-е" + " число. Необходимо подготовить отчет");
-        }
-
-        //TASK8
-        System.out.println("\nTASK8\n");
-        short startYear = 2025-200;
-        short endYear = 2025+100;
-
-        while (startYear<=endYear) {
-            startYear++;
-            if (startYear % 79 == 0) {
-                System.out.println(startYear);
-            }
-        }
-
-
     }
 }
