@@ -17,29 +17,51 @@ public class Main {
         //TASK2
         System.out.println("\nTASK2\n");
         for (int i = 0; i < weight.length; i++) {
-            System.out.print(weight[i] + " ");
+            if (i != weight.length-1) {
+                System.out.print(weight[i] + ", ");
+            }else{
+                System.out.println(weight[i]);
+            }
+
         }
         System.out.println();
         for (int i = 0; i < weightFlout.length; i++) {
-            System.out.print(weightFlout[i] + " ");
+            if (i != weightFlout.length-1) {
+                System.out.print(weightFlout[i] + ", ");
+            }else {
+                System.out.println(weightFlout[i]);
+            }
         }
         System.out.println();
         for (int i = 0; i < freeWeight.length; i++) {
-            System.out.print(freeWeight[i] + " ");
+            if (i != freeWeight.length-1) {
+                System.out.print(freeWeight[i] + ", ");
+            }else {
+                System.out.println(freeWeight[i]);
+            }
         }
 
         //TASK3
         System.out.println("\nTASK3\n");
         for (int i = weight.length-1; i >= 0; i--) {
-            System.out.print(weight[i] + " ");
+            System.out.print(weight[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
         for (int i = weightFlout.length-1; i >= 0; i--) {
-            System.out.print(weightFlout[i] + " ");
+            System.out.print(weightFlout[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
         for (int i = freeWeight.length-1; i >= 0; i--) {
-            System.out.print(freeWeight[i] + " ");
+            System.out.print(freeWeight[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
         //TASK4
         System.out.println("\nTASK4\n");
