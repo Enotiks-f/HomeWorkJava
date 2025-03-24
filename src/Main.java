@@ -1,76 +1,45 @@
 public class Main {
     public static void main(String[] args) {
-        //TASK1
         System.out.println("\nTASK1\n");
-        int[] weight = new int[3];
-        weight[0] = 1;
-        weight[1] = 2;
-        weight[2] = 3;
-
-        float[] weightFlout = new float[3];
-        weightFlout[0] = 1.57f;
-        weightFlout[1] = 7.654f;
-        weightFlout[2] = 9.986f;
-
-        int[] freeWeight = {1, 5, 89, 43, 232, 2};
+        int[] salary = {20, 30, 15, 21, 89};
+        int totalSalary = 0;
+        for (int i = 0; i < salary.length; i++) {
+            totalSalary += salary[i];
+        }
+        System.out.println("Сумма трат за месяц составила " +  totalSalary + " рублей");
 
         //TASK2
         System.out.println("\nTASK2\n");
-        for (int i = 0; i < weight.length; i++) {
-            if (i != weight.length-1) {
-                System.out.print(weight[i] + ", ");
-            }else{
-                System.out.println(weight[i]);
+        int minSalary = salary[0];
+        int maxSalary = salary[0];
+        for (int salarys: salary) {
+            if (minSalary < salarys) {
+                minSalary = salarys;
             }
-
-        }
-        System.out.println();
-        for (int i = 0; i < weightFlout.length; i++) {
-            if (i != weightFlout.length-1) {
-                System.out.print(weightFlout[i] + ", ");
-            }else {
-                System.out.println(weightFlout[i]);
+            if (maxSalary > salarys) {
+                maxSalary = salarys;
             }
         }
-        System.out.println();
-        for (int i = 0; i < freeWeight.length; i++) {
-            if (i != freeWeight.length-1) {
-                System.out.print(freeWeight[i] + ", ");
-            }else {
-                System.out.println(freeWeight[i]);
-            }
-        }
+        System.out.println("Минимальная сумма трат за неделю составила " + minSalary + " рублей");
+        System.out.println("Максимальная сумма тран за неделю составила " + maxSalary + " рублей");
 
         //TASK3
         System.out.println("\nTASK3\n");
-        for (int i = weight.length-1; i >= 0; i--) {
-            System.out.print(weight[i]);
-            if (i > 0) {
-                System.out.print(", ");
-            }
+        int totalSalarys = 0;
+        float age;
+        for (int salarys : salary) {
+            totalSalarys += salarys;
         }
-        System.out.println();
-        for (int i = weightFlout.length-1; i >= 0; i--) {
-            System.out.print(weightFlout[i]);
-            if (i > 0) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println();
-        for (int i = freeWeight.length-1; i >= 0; i--) {
-            System.out.print(freeWeight[i]);
-            if (i > 0) {
-                System.out.print(", ");
-            }
-        }
+        age = (float) (totalSalarys / salary.length);
+        System.out.println("Средняя сумма трат за месяц составила " + age + " рублей");
+
         //TASK4
         System.out.println("\nTASK4\n");
-        int[] arr = {1, 3, 4, 5, 23, 7, 8 , 13, 43, 22, 50};
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) {
-                System.out.println(arr[i]);
-            }
+        String name = "";
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--) {
+            name += reverseFullName[i];
         }
+        System.out.println(name);
     }
 }
