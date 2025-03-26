@@ -2,10 +2,10 @@ public class Main {
     public static void main(String[] args) {
         //TASK1
         System.out.println("\nTASK1\n");
-        String firstName = " Ivan";
-        String midelName = "Ivanov ";
-        String lastName = " Ivanovich";
-        String fullname = midelName + " " + firstName + " " + lastName;
+        String firstName = "Ivan";
+        String middleName = "Ivanovich ";
+        String lastName = "Ivanov";
+        String fullname = lastName + " " + firstName + " " + middleName;
         System.out.println("Ф.И.О. сотрудника - " + fullname);
 
         //TASK2
