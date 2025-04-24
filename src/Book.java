@@ -3,7 +3,7 @@ public class Book {
     private Author author;
     private int publisher;
 
-    public Book(String title, Author author, int publisher){
+    public Book(String title, Author author, int publisher) {
         this.title = title;
         this.author = author;
         this.publisher = publisher;
@@ -25,4 +25,8 @@ public class Book {
         this.publisher = publisher;
     }
 
+    @Override
+    public String toString() {
+        return title + " " + "author:" + author + " " + "publisher: " + publisher;
+    }
 }
